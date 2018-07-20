@@ -1,0 +1,12 @@
+PUT /_template/pmt_details
+{
+  "order": 0,
+  "index_patterns": "pmt_details*",
+  "mappings": {
+    "_default_": {
+      "properties": {
+        "location": {
+          "type": "geo_point"
+        }
+      }
+   
